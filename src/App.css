@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+/*!
+ *
+ * antd v3.22.2
+ * 种方式是加载了全部的antd组件，对前端性能会造成影响。通常我们会通过以下方式集成antd
+
+添加react-app-rewired、添加babel-plugin-import、添加less
+yarn add react-app-rewired --dev
+yarn add babel-plugin-import --dev
+yarn add react-app-rewire-less --dev
+ *
+ */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
